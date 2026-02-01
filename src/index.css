@@ -1,0 +1,118 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00c853;
+  font-family: 'Arial Black', sans-serif;
+  overflow: hidden;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25vh 1fr 15vh;
+  gap: 2vw;
+  padding: 4vh 4vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.currentPlay-container {
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+.game-move-box {
+  background-color: #ffffd1;
+  width: 60%;
+  height: 70%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  font-weight: 900;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.deck-card { height: 70%; width: auto; border-radius: 8px; }
+
+.home-button-wrapper {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.player-container, .computer-container {
+  background-color: #b0b0b0;
+  border-radius: 30px;
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.hand-label {
+  position: absolute;
+  top: 2.5vh;
+  left: 2vw;
+  padding: 1vh 2.5vw;
+  border-radius: 20px;
+  font-size: 1.5vh;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.player-container .hand-label { background-color: #e61900; }
+.computer-container .hand-label { background-color: #000000; }
+
+.cards-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5vw;
+  margin-top: 5vh;
+}
+
+.card-img {
+  height: 22vh;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+}
+
+.controls-footer {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+}
+
+.playButton-container {
+  background-color: #b0b0b0;
+  padding: 2vh 3vw;
+  border-radius: 50px;
+  display: inline-flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+.action-btn {
+  border: none;
+  border-radius: 50px;
+  padding: 2vh 4vw;
+  font-size: 2vh;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-red { background-color: #e61900; color: black; }
+.btn-white { background-color: #ffffff; color: black; }
+.home-btn { background-color: #ffffff; color: black; padding: 1.5vh 5vw; }
