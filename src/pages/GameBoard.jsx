@@ -11,7 +11,7 @@ import {
   isAnswerCard, isPenaltyCard, getPenaltyValue 
 } from '../utils/gameLogic';
 
-export default function GameBoard() {
+function GameBoard() {
   const { deck, setDeck, discardPile, setDiscardPile, initializeGame, checkReshuffle } = useKadiDeck();
   
   const [playerHand, setPlayerHand] = useState([]);
@@ -215,3 +215,5 @@ export default function GameBoard() {
     </div>
   );
 }
+
+export default GameBoard;

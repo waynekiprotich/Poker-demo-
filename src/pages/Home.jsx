@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function Home() {
+function Home() {
   const navigate = useNavigate();
   return (
     <div className="board-container" style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
@@ -12,3 +12,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

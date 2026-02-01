@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-export default function Rules() {
+function Rules() {
   const navigate = useNavigate();
   return (
     <div className="board-container" style={{display: 'block', color: 'white', overflowY: 'auto'}}>
@@ -16,3 +16,5 @@ export default function Rules() {
     </div>
   );
 }
+
+export default Rules;

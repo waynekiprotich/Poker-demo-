@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import GameBoard from './pages/GameBoard';
 import Rules from './pages/Rules';
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -14,3 +14,5 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
+export default App;

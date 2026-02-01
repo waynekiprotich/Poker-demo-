@@ -1,4 +1,4 @@
-export default function CurrentPlay({ gameMessage, topCard }) {
+function CurrentPlay({ gameMessage, topCard }) {
   const cardImage = topCard?.image || "https://deckofcardsapi.com/static/img/back.png";
   return (
     <div className="currentPlay-container">
@@ -9,3 +9,5 @@ export default function CurrentPlay({ gameMessage, topCard }) {
     </div>
   );
 }
+
+export default CurrentPlay;

@@ -1,4 +1,4 @@
-export default function ComputerHand({ cards = [], reveal = false }) {
+function ComputerHand({ cards = [], reveal = false }) {
   const displayCards = reveal ? cards : Array(cards.length).fill(0);
   return (
     <div className="computer-container">
@@ -16,3 +16,5 @@ export default function ComputerHand({ cards = [], reveal = false }) {
     </div>
   );
 }
+
+export default ComputerHand;

@@ -1,4 +1,4 @@
-export default function PlayerHand({ cards, onCardClick }) {
+function PlayerHand({ cards, onCardClick }) {
   return (
     <div className="player-container">
       <div className="hand-label">PLAYER</div>
@@ -17,3 +17,5 @@ export default function PlayerHand({ cards, onCardClick }) {
     </div>
   );
 }
+
+export default PlayerHand;

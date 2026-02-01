@@ -1,4 +1,4 @@
-export default function PlayButtons({ onDraw }) {
+function PlayButtons({ onDraw }) {
   return (
     <div className="playButton-container">
       <button className="action-btn btn-red">PLAY CARD</button>
@@ -6,3 +6,5 @@ export default function PlayButtons({ onDraw }) {
     </div>
   );
 }
+
+export default PlayButtons;

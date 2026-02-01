@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-export default function HomeButton() {
+
+function HomeButton() {
   const navigate = useNavigate();
   return (
     <div className="home-button-wrapper">
@@ -7,3 +8,5 @@ export default function HomeButton() {
     </div>
   );
 }
+
+export default HomeButton;
